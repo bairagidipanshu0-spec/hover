@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>css learning</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <style>
+            .box{
+                width: 280px;
+                height: 212px;
+                background-image: url(./1.jpg);
+                background-size: cover;
+                box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+                position: relative;
+                overflow: hidden;
+            }
+            .overlay{
+                width: 280px;
+                height: 212px;
+                top: -212px;
+                background: rgba(0, 0, 0, 0.5);
+                transition-property: all;
+                transition-duration: 0.3s;
+                transition-timing-function: ease-in-out;
+                position: absolute;
+            }
+            .box:hover .overlay{
+                top: 0px;
+            }
+            .overlay > a{
+                position: absolute;
+                top: 80px;
+                left: 80px;
+                display: inline-block;
+                text-decoration: none;
+                width: 50px;
+                height: 50px;
+                text-align: center;
+                line-height: 50px;
+                background: #fff;
+                border-radius: 50px;
+                color: #464646;
+            }
+            .b{
+                left: 135px !important;
+            }
+        </style>
+    </head>
+    <body>
+      <div class="common box">
+        <div class="overlay">
+            <a href="https://www.instagram.com/deepanshu_vaishnav_1708?stkn=cnJwMzJpN3ZwZnJ2"><i class="fa-solid fa-link"></i></a>
+            <a class="b" href="https://wa.me/qr/EUEUQ7VO5VM2D1"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+      </div>  
+    </body>
+</html>
