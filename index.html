@@ -14,6 +14,8 @@
                 box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
                 position: relative;
                 overflow: hidden;
+                float: left;
+                margin: 10px;
             }
             .overlay{
                 width: 280px;
@@ -45,6 +47,73 @@
             .b{
                 left: 135px !important;
             }
+
+
+            .box1{
+                width: 280px;
+                height: 212px;
+                background-image: url(./1.jpg);
+                background-size: cover;
+                box-shadow: 0px 0px 10px 1px rgba(0, 0, 0,0.5);
+                position: relative;
+                overflow: hidden;
+                float: left;
+                margin: 10px;
+            }
+            .overlay1{
+                width: 280px;
+                height: 212px;
+                position: absolute;
+                transition-property: all;
+                transition-duration: 0.2s;
+                transition-timing-function: linear;
+                opacity: 0;
+                background: rgba(0, 0, 0, 0.5)
+            }
+            .box1:hover .overlay1{
+                opacity: 1;
+
+            }
+            .c1{
+                position: absolute;
+                display: inline-block;
+                top: 81px;
+                left: 75px;
+                width: 50px;
+                height: 50px;
+                background: #fff;
+                border-radius: 50px;
+                text-align: center;
+                line-height: 50px;
+                transition-property: all;
+                transition-timing-function: ease-in;
+                transition-duration: 0.2s;
+                color: #464646;
+            }
+            .c2{
+                position: absolute;
+                display: inline-block;
+                top: 81px;
+                right: 75px;
+                width: 50px;
+                height: 50px;
+                background: #fff;
+                border-radius: 50px;
+                text-align: center;
+                line-height: 50px;
+                 transition-property: all;
+                transition-timing-function: linear;
+                transition-duration: 0.2s;
+                color: #464646;
+            }
+            .box1:hover .c1{
+                left: 88px;
+            }
+            .box1:hover .c2{
+                right: 90px;
+            }
+
+
         </style>
     </head>
     <body>
@@ -53,6 +122,12 @@
             <a href="https://www.instagram.com/deepanshu_vaishnav_1708?stkn=cnJwMzJpN3ZwZnJ2"><i class="fa-solid fa-link"></i></a>
             <a class="b" href="https://wa.me/qr/EUEUQ7VO5VM2D1"><i class="fa-solid fa-magnifying-glass"></i></a>
         </div>
-      </div>  
+      </div> 
+       <div class="box1">
+            <div class="overlay1">
+                <a href="#" class="c1"><i class="fa-solid fa-link"></i></a>
+                <a href="#" class="c2"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+        </div> 
     </body>
 </html>
